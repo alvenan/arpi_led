@@ -1,4 +1,8 @@
 # SPDX-License-Identifier: GPL-2.0-only
+config GPIO_LED
+    tristate "Support for LED in GPIO 18"
+    default y
+
 config LEDS_GPIO_REGISTER
 	bool
 	help
