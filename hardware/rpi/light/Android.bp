@@ -1,0 +1,16 @@
+cc_binary {
+    name: "android.hardware.lights-led_gpio18",
+    relative_install_path: "hw",
+    init_rc: ["lights.rc"],
+    vintf_fragments: ["lights.xml"],
+    vendor: true,
+    srcs: [
+        "Lights.cpp",
+        "main.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.light-V2-ndk",
+    ],
+}

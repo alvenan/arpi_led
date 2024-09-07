@@ -1,0 +1,6 @@
+service android.hardware.lights@aidl-service.rpi /vendor/bin/hw/android.hardware.lights@aidl-service.rpi
+    class hal
+    user root
+    group root
+    disabled
+    oneshot
